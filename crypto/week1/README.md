@@ -5,7 +5,8 @@ https://www.cnblogs.com/youngbo-24/p/18617645#reference
 
 https://blog.csdn.net/qq_64121591/article/details/144049411
 
-https://blog.csdn.net/weixin_52620919/article/details/119249518（主要看一下这个里的几种，其他几个当补充吧，这一篇看完去了解base系列编码，自己搜索一下，网上多的是）
+https://blog.csdn.net/weixin_52620919/article/details/119249518
+(主要看一下这个里的几种，其他几个当补充吧，这一篇看完去了解base系列编码，自己搜索一下，网上多的是)
 
 https://www.bilibili.com/video/BV1bK4y1R7Hb/?spm_id_from=333.337.search-card.all.click&vd_source=a01a62f772bf2e577e11004dfef0bde1
 
