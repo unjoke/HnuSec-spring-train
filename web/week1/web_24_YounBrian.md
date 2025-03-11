@@ -1,5 +1,7 @@
 ## 攻防世界基础题单：view_source
 进入场景==>F12==>菜单中的“元素”==>查看网页前端代码即可获得flag
+![屏幕截图 2025-03-11 201320](https://github.com/user-attachments/assets/3b4bb7ee-33c3-4b87-9744-eca484ea3faf)
+
 ## 攻防世界基础题单：get_post
 ### 1. get传参
    直接在地址栏后加?a=1,回车
