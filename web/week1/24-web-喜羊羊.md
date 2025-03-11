@@ -2,9 +2,9 @@
 
 ## **view_source** 
 
-![image-20250309230812899](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250309230812899.png)
+![image-20250309230812899](img/image-20250309230812899.png)
 
-![image-20250309230854553](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250309230854553.png)
+![image-20250309230854553](img/image-20250309230854553.png)
 
 
 
@@ -20,11 +20,11 @@
 
 **点击f12**
 
-![image-20250309234850455](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250309234850455.png)
+![image-20250309234850455](img/image-20250309234850455.png)
 
 ![image-20250309235225791](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250309235225791.png)
 
-![image-20250309235347243](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250309235347243.png)
+![image-20250309235347243](img/image-20250309235347243.png)
 
 ## get_post
 
@@ -50,11 +50,11 @@ http://example.com/?a=1
 
 **浏览器和服务器通常会缓存GET请求的结果，这可能会影响到数据的实时性。**
 
-![image-20250310003621941](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310003621941.png)
+![image-20250310003621941](img/image-20250310003621941.png)
 
 根据提示用bp抓包
 
-![image-20250310003739597](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310003739597.png)
+![image-20250310003739597](img/image-20250310003739597.png)
 
 按照POST的形式，并在URL中对应位置填写get参数，包末尾填写post参数
 
@@ -62,11 +62,11 @@ http://example.com/?a=1
 
 (powered by CSDN 嘻嘻)
 
-![image-20250310004110658](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310004110658.png)
+![image-20250310004110658](img/image-20250310004110658.png)
 
 需要注意，添加的那个项目要在请求包中间的位置，而POST变量写在结尾处，如果有多个参数则用&连接，不加问号直接写即可
 
-![image-20250310005240168](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310005240168.png)
+![image-20250310005240168](img/image-20250310005240168.png)
 
 ## Robots
 
@@ -78,7 +78,7 @@ robots文件是一个纯文本文件，也就是常见的.txt文件。在这个�
 
 robots文件必须要存放在网站的根目录下。 输入域名/robots.txt 即可访问。
 
-![img](https://pic2.zhimg.com/v2-c9ebc058762a05be45da6388eee4a31d_1440w.jpg)
+![img](img/v2-c9ebc058762a05be45da6388eee4a31d_1440w.jpg)
 
 例如，图示
 
@@ -104,13 +104,13 @@ user-agent这句代码表示那个搜索引擎准守协议。user-agent后面为
 
 因此根据提示，我们访问该网站的robots文件按格式修改网址
 
-![image-20250310135421447](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310135421447.png)
+![image-20250310135421447](img/image-20250310135421447.png)
 
-![image-20250310135516488](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310135516488.png)
+![image-20250310135516488](img/image-20250310135516488.png)
 
 再根据提示查看php,得到答案
 
-![image-20250310135600173](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310135600173.png)
+![image-20250310135600173](img/image-20250310135600173.png)
 
 ## AI脚本
 
@@ -147,13 +147,13 @@ if __name__ == "__main__":
 
 将整数`i`转换为字符串`value`，然后对这个字符串进行MD5加密，生成一个32位的十六进制哈希值`md5_hash`。检查生成的MD5哈希值的前6位是否与`target_prefix`匹配。如果匹配，就执行下面的代码。如果找到满足条件的值，就打印这个值和对应的MD5哈希值，并使用`break`退出循环。没有找到满足条件的值，就将`i`加1，继续下一次循环。
 
-至于最后，![image-20250310225757299](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310225757299.png)
+至于最后，![image-20250310225757299](img/image-20250310225757299.png)
 
 这是Python程序的入口点。当直接运行这个脚本时，会调用`find_md5_with_prefix`函数，并传入参数`"19ca14"`，即寻找一个数字，使得其MD5哈希值的前6位是`"19ca14"`。大致就是暴力破解的一个过程。
 
-![image-20250310235517904](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310235517904.png)
+![image-20250310235517904](img/image-20250310235517904.png)
 
-![image-20250310235610622](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250310235610622.png)
+![image-20250310235610622](img/image-20250310235610622.png)
 
 然后金币不够，做不下去了......   学生认证审核中
 
@@ -193,7 +193,7 @@ echo “Hello World！”;
 
 以这个代码为例
 
-![image-20250311122546951](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20250311122546951.png)
+![image-20250311122546951](img/image-20250311122546951.png)
 
 DOCTYPE是document type的简写。它是一种标记语言的文档类型声明，即告诉浏览器当前 HTML 是用什么版本编写的。
 
@@ -213,4 +213,4 @@ echo（） 函数输出一个或多个字符串。
 
 *php先更新到这里，鼠鼠水平不高，配置phpstorm的时候遇到了很多很多问题，因此pr的速度慢了亿些，大佬们不要嫌弃鼠鼠*，鼠鼠后续会加快学习PHP的速度。
 
-![84e903110202374ddae2efd6b5565ad](C:\Users\ASUS\Documents\WeChat Files\wxid_lws2af4fe9ws22\FileStorage\Temp\84e903110202374ddae2efd6b5565ad.jpg)
+![84e903110202374ddae2efd6b5565ad](img/84e903110202374ddae2efd6b5565ad.jpg)
