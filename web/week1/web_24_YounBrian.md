@@ -2,18 +2,17 @@
 进入场景==>F12==>菜单中的“元素”==>查看网页前端代码即可获得flag
 ## 攻防世界基础题单：get_post
 ### 1. get传参
-
    直接在地址栏后加?a=1,回车
 ### 2. post传参
 
    在hackbar中
-    ![](vx_images/68273369175441.png)
+   ![屏幕截图 2025-03-11 200918](https://github.com/user-attachments/assets/a1881b63-6443-406a-945a-9a949a867f62)
+
 
 ## 本次作业flag 
+![34196413227125(1)](https://github.com/user-attachments/assets/5e5e4630-6c7d-4474-9d21-be66c4004c33)
 
-查看源码  
 flag{we1c0me_t0_CTF!}
-![](vx_images/34196413227125.png)
 ## python脚本
 ```
 import hashlib
@@ -100,7 +99,8 @@ if __name__ == "__main__":
 
 ## RCE_writeup
 ### easyrce
-![IMG_20250310_201013](vx_images/203444756791729.jpg)
+![203444756791729(1)](https://github.com/user-attachments/assets/2e596578-09c2-40ee-8404-64b7aacaa53a)
+
 可以看到源码中要以get方式传一个url参数，然后将其放入了eval（）函数中，此函数能将括号中的字符串视为命令运行
 常见的系统命令执行函数还有
 passthru()
@@ -115,30 +115,43 @@ proc_open()
 
 pcntl_exec()
 考虑上传系统命令查看根目录
-![Screenshot_2025-03-10-20-18-09-028_com](vx_images/556926102365644.jpg)
+![556926102365644(1)](https://github.com/user-attachments/assets/434ae80c-ccf2-4edd-aee4-7dea8e3f2a50)
+
+
 查看flag文件
-![屏幕截图 2025-03-10 115708](vx_images/158316197493369.png)
+![158316197493369(1)](https://github.com/user-attachments/assets/cbf1a5c5-1fbb-45b2-a15c-a0beae1ec11f)
+
+
 ### jicao
-![屏幕截图 2025-03-10 114831](vx_images/213308334322052.png)
-由源码可知要求以post传参上传一个id=wllmNB，以get传参上传一个一个json数组，且键为'x'的值为'wllm'![屏幕截图 2025-03-10 114706](vx_images/570255906128593.png)
+![213308334322052(1)](https://github.com/user-attachments/assets/f0c8b393-41c6-4e6d-ac09-d509f00cc781)
+
+由源码可知要求以post传参上传一个id=wllmNB，以get传参上传一个一个json数组，且键为'x'的值为'wllm'![570255906128593(1)](https://github.com/user-attachments/assets/c71e250f-fd0b-41cb-a627-9a06bbef3a31)
+
 ### caidao
-![屏幕截图 2025-03-10 224950](vx_images/266505649215211.png)
-要以post传参一个wllm,用hackbar传一个wllm=systen("ls /");![屏幕截图 2025-03-10 225246](vx_images/385748471947830.png)
+![266505649215211(1)](https://github.com/user-attachments/assets/c1174847-d79c-4da1-95ac-8e5058b773db)
+
+要以post传参一个wllm,用hackbar传一个wllm=systen("ls /");![屏幕截图 2025-03-11 190946](https://github.com/user-attachments/assets/b8ccf856-4efb-4953-aa51-feb79e22e8ae)
+
 然后查看flag文件
-![屏幕截图 2025-03-10 225455](vx_images/109075908279927.png)
+![109075908279927](https://github.com/user-attachments/assets/fd7838ee-430a-41ad-87ae-6e3b15861c28)
+
 ### babyrce
-![屏幕截图 2025-03-10 230909](vx_images/175781854130549.png)
+![175781854130549(1)](https://github.com/user-attachments/assets/d268f2cd-79d9-477f-b27e-d46e085ab1c2)
+
 根据源码提示，用burp抓包后（hackbar也行）cookie中admin=1
-![屏幕截图 2025-03-10 230327](vx_images/207644774099732.png)
+![207644774099732(1)](https://github.com/user-attachments/assets/80148cc4-9747-4c48-98f1-212082f9f308)
+
 得到进一步的代码
 php基础薄弱，不知道preg_match的作用
+![301343709447759(1)](https://github.com/user-attachments/assets/94e2356e-1940-40a0-be62-332c9896a05c)
 
-![屏幕截图 2025-03-10 230531](vx_images/301343709447759.png)
+
 搜索后得知preg_match在php中用于执行正则表达式，参数有 pattern--正则表达式模式,subject--要搜索的字符串, matches--如果提供，匹配结果将储存在此数组中,flags--用于控制匹配行为的标志，offset--从字符串指定位置开始搜索
 那么代码中的preg_match就应该是检查ip中是否存在空格
 由于查看根目录中的命令含有空格，所以看了下别人的wp得知${IFS}可以代替空格
-![屏幕截图 2025-03-10 232941](vx_images/504115924039699.png)
-![屏幕截图 2025-03-10 233200](vx_images/115713502516367.png)
+![504115924039699(1)](https://github.com/user-attachments/assets/ebb919fd-87c5-46d1-9bc4-d68206f250b6)
+![屏幕截图 2025-03-11 200239](https://github.com/user-attachments/assets/9f55b255-6685-45c6-96f7-643c0809654c)
+
 
 
 
