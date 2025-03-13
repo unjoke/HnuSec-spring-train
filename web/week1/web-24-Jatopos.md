@@ -1,14 +1,17 @@
 # 工具安装
-D
+HackBar
+
+![69f6aaf9fc924c9decab4f8dd38a6ae8](https://github.com/user-attachments/assets/299e710c-5aba-4e67-82f4-1faf55bd532c)
+
+BurpSuite
+
+![QQ_1741861291613](https://github.com/user-attachments/assets/75d54315-e541-4694-ab38-a4505b859d9a)
+
+Dirsearch & SQLmap & Typora & git
+
 ![](https://github.com/user-attachments/assets/0383d67a-eb5e-4978-b133-28b90830fd3a)
+
 ![QQ_1741860782970](https://github.com/user-attachments/assets/0c0bfe2d-33ff-4bed-9780-6820e3e86fed)
-
-
-
-
-
-
-
 
 # 攻防世界基础题单
 ## view_source
@@ -46,3 +49,34 @@ Robots 协议（也称为爬虫协议、机器人协议等）是网站与爬虫�
 直接看README.md文件源代码可以找到 flag{we1c0me_t0_CTF!}
 
 ![3e25593536b4b1868cb42680703d4158](https://github.com/user-attachments/assets/b7597c5b-6f4f-42d0-87c9-a5e4d83899b3)
+
+# python脚本（DeepSeek）
+import hashlib
+
+def find_md5_prefix(target_prefix):
+    num = 0
+    while True:
+        candidate = str(num).encode()
+        hash_hex = hashlib.md5(candidate).hexdigest()
+        if hash_hex.startswith(target_prefix):
+            return candidate.decode()
+        num += 1
+
+if __name__ == "__main__":
+    target = '19ca14'
+    result = find_md5_prefix(target)
+    print(f"找到的值: {result}")
+
+# PHP
+## PHP
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Jatopos</h1>
+
+<?php
+echo "Hello CTF!";
+?>
+
+</body>
+</html>
