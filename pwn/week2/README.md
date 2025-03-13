@@ -16,7 +16,7 @@
   - https://www.nssctf.cn/problem/2633
 3. 现在开始pwn学习的第一种漏洞类型，栈溢出 [栈溢出原理 - CTF Wiki](https://ctf-wiki.org/pwn/linux/user-mode/stackoverflow/x86/stackoverflow-basic/)
   pwntools使用：https://cloud.tencent.com/developer/article/2384837
-  完成本周任务文件夹中的题目
+  **完成本周任务文件夹中的题目**
 4. 完成上述任务后用md编写每周学习笔记并pr到对应的仓库中
 5. 学有余力可以去了解学习ret2text以及gdb的使用
 6. 注册nssctf和buuctf或其他ctf学习平台,自己做些题
