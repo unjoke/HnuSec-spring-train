@@ -53,5 +53,5 @@ if __name__ == "__main__":
 (2)PHP应用（使用PHPstorm实现)
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/54389986/1741860051050-c4b119d8-50a2-4304-9ec3-6af875a54a64.png)
-（README里的flag:flag{we1c0me_t0_CTF!}
+（README里的flag{we1c0me_t0_CTF!}
 
