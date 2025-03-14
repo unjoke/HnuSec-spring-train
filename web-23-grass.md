@@ -15,7 +15,7 @@ ctrl+shift+I 查看元素获取flagcyberpeace{1d90ab99b867aca3a10efe0f302fe01e}
 搜索robots协议了解其内容，添加robots.txthuiche
 ![](https://imgur.com/DP8wG5l.png)
 复制内容替换robots.txt得到flagcyberpeace{55c86245a7bc63d32cffc41b1902be4b}
-https://imgur.com/JN9qBYG
+![](https://imgur.com/JN9qBYG.png)
 
 #python脚本
 
