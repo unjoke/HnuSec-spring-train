@@ -1,19 +1,19 @@
 # 文件中的flag
-https://imgur.com/a/Tv8aJuc
+![](https://imgur.com/a/Tv8aJuc.png)
 查看文件源代码 flag{we1c0me_t0_CTF!}
 
 # view_source
-https://imgur.com/XVS7W79
+![](https://imgur.com/XVS7W79.png)
 ctrl+shift+I 查看元素获取flagcyberpeace{1d90ab99b867aca3a10efe0f302fe01e}
 
 # get_post
-https://imgur.com/7pJICzi
+![截图](https://imgur.com/7pJICzi.png)
 在url后加?a=1回车，复制url打开hackbar，选择post data输入b=2，点击execute获取flagcyberpeace{9dc8dafb2c5c3647942d7170f310d9ee}
 
 # robots
-https://imgur.com/K3yOcZM  
+![](https://imgur.com/K3yOcZM.png)
 搜索robots协议了解其内容，添加robots.txthuiche
-https://imgur.com/DP8wG5l  
+![](https://imgur.com/DP8wG5l.png)
 复制内容替换robots.txt得到flagcyberpeace{55c86245a7bc63d32cffc41b1902be4b}
 https://imgur.com/JN9qBYG
 
